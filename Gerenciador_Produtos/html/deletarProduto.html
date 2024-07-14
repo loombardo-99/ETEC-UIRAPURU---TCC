@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Excluir produtos</title>
+</head>
+<body>
+    <!-- Barra de navegação lateral -->
+    <div class="sidebar">
+        <a href="/html/listaProduto.html"><img src="/imagens/caracteristicas.png" alt="">
+            <span>Lista de Produtos</span></a>
+
+        <a href="/html/Tela_cadastro.html"><img src="/imagens/adicionar-produto.png" alt="">
+            <span>Cadastrar Produtos</span></a>
+            
+        <a href="/html/deletarProduto.html"><img src="/imagens/excluir-produto.png" alt="">
+            <span>Excluir  Produtos</span></a>
+                
+        <a href="/html/editarProduto.html"><img src="/imagens/editar.png" alt="">
+            <span>Editar Produtos</span></a>
+    </div>
+
+    <!-- Barra de navegação horizontal -->
+    <div class="navbar">
+        <a class="img_logo">
+            <img src="/imagens/logo-original.jpeg" alt="Logo">
+        </a>
+        <div>
+            <input type="text" placeholder="procurar..">
+            <button>pesquisar</button>
+        </div>
+        <a href=""><img src="../imagens/botao-home (1).png" alt="home"></a>
+        <a href=""><img src="/imagens/do-utilizador.png" alt="perfil"></a>
+        <a href=""><img src="/imagens/botao-de-informacao.png" alt="ajuda"></a>
+        <!-- Adicione mais links conforme necessário -->
+    </div>
+    <h1>Deletar produto</h1>
+    <form action="/php/deletarProduto.php" method="post">
+        <label for="">Digite o codigo do produto</label>
+        <input type="text" placeholder="inserir o codigo">
+        <button type="submit" name="deletar">deletar</button>
+    </form>
+    
+</body>
+</html>

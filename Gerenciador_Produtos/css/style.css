@@ -1,0 +1,157 @@
+  /* Estilos gerais */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+.content_form {
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+    padding: 70px;
+    width: 260px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 200px; /* Distância do topo da página */
+    margin-bottom: 110px;
+}
+
+.content_form1 {
+    color: black;
+    font-size: 20px;
+    background-color: rgb(254, 200, 130);
+    border-radius:4px;
+    padding: 45px;
+    width: 880px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 0 auto; /* Distância do topo da página */    
+}
+input{
+    border-radius: 4px;
+    width: 300px;
+    height: 20px;
+}
+.descricao{
+    height: 70px;
+}
+.content_form legend{
+    width: 0 auto; /* Garante que o tamanho seja automático para centralizar corretamente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    font-size: 35px; /* Tamanho da fonte */
+    color:rgb(255, 145, 0); /* Cor do texto */
+    padding-bottom: 4px; /* Espaço abaixo do texto */  
+}
+
+/* Estilos para a barra de navegação lateral */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100px; /* Largura da barra lateral */
+    background-color: rgb(255, 173, 65);
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza horizontalmente os itens */
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 10px; /* Espaço entre os links */
+}
+
+/* Estilos para a barra de navegação horizontal */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:first-child {
+    margin-right: auto; /* Empurra o primeiro link para a esquerda */
+}
+
+.navbar a:hover {
+    background-color: #9c9a9a;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+
+/* Estilo para o link de imagem */
+.navbar img {
+    height: 40px; /* Altura da imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+.img_logo img {
+    height: 60px; /* Altura da imagem */
+    margin-right:10px; /* Espaço à direita da imagem */
+}
+.sidebar img {
+    width: 50px; /* Redimensiona a largura da imagem para 80% do tamanho do container pai (.sidebar) */
+    height: auto; /* Mantém a proporção da altura automaticamente */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin-bottom:5px; /* Espaçamento abaixo da imagem */
+    padding-left: 15px;
+}
+.image-link {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #333;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.content_form button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin: 40px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: #ffffff;
+    
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+th {
+    background-color: #525252;
+}

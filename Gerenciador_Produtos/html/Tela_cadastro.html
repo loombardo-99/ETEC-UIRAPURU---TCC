@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Gerenciador de Estoque</title>
+</head>
+<body>
+    <!-- Barra de navegação lateral -->
+    <div class="sidebar">
+        <a href="/html/listaProduto.html"><img src="/imagens/caracteristicas.png" alt="">
+            <span>Lista de Produtos</span></a>
+
+        <a href="/html/Tela_cadastro.html"><img src="/imagens/adicionar-produto.png" alt="">
+            <span>Cadastrar Produtos</span></a>
+
+        <a href="/html/deletarProduto.html"><img src="/imagens/excluir-produto.png" alt="">
+                <span>Excluir  Produtos</span></a>
+                
+        <a href="/html/editarProduto.html"><img src="/imagens/editar.png" alt="">
+            <span>Editar Produtos</span></a>
+    </div>
+
+    <!-- Barra de navegação horizontal -->
+    <div class="navbar">
+        <a class="img_logo">
+            <img src="/imagens/logo-original.jpeg" alt="Logo">
+        </a>
+        <div>
+            <input type="text" placeholder="procurar..">
+            <button>pesquisar</button>
+        </div>
+        <a href=""><img src="/png/bxs-home.png" alt="home"></a>
+        <a href=""><img src="/png/bxs-user.png" alt="perfil"></a>
+        <a href=""><img src="/png/bx-info-square.png" alt="ajuda"></a>
+        <!-- Adicione mais links conforme necessário -->
+    </div>
+
+    <div class="content_form">
+        <form action="/cadastroProduto.php" method="POST">
+            <legend>Cadastrar Produto</legend><br><br>
+
+            <label for="nome">Nome do Produto</label><br>
+            <input type="text" name="nome" required><br><br>
+
+            <label for="lote">Lote</label><br>
+            <input type="number" name="lote" required><br><br>
+
+            <label for="fabricante">Fabricante</label><br>
+            <input type="text" name="fabricante" required><br><br>
+
+            <label for="validade">Validade</label><br>
+            <input type="date" name="validade" required><br><br>
+
+            <label for="descricao">Descrição</label><br>
+            <input type="text" name="descricao"><br><br>
+            <br><br>
+            <button type="submit">Cadastrar</button>
+            
+        </form>
+    </div><br><br>
+    <div class="content_form1">
+        <form action="/cadastroProduto.php" method="POST">
+            <fieldset>
+                <legend><strong>Processos de Armazenamento</strong></legend>
+                <label for=""><strong>1. Recebimento</strong></label>
+                <select name="" id=""></select>
+
+                <label for=""><strong>2. Armazenamento</strong></label>
+                <select name="" id=""></select>
+
+                <label for=""><strong>3. Manutenção de Estoque</strong></label>
+                <select name="" id=""></select>
+            </fieldset><br><br>
+            <br>
+
+            <fieldset>
+                <legend><strong>Logistica da Venda</strong></legend>
+
+                <label for=""><strong>1. Processamento do Pedido</strong></label>
+                <select name="" id=""></select>
+
+                <label for=""><strong>2. Separação e Embalagem</strong></label>
+                <select name="" id=""></select>
+                
+                <label for=""><strong>3. Expedição</strong></label>
+                <select name="" id=""></select>
+
+                <label for=""><strong>4. Tranporte</strong></label>
+                <select name="" id=""></select>
+
+                <label for=""><strong>5. Entrega</strong></label>
+                <select name="" id=""></select>
+
+                <label for=""><strong>6. Pós-Venda</strong></label>
+                <select name="" id=""></select>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
